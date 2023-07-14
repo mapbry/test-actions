@@ -1,0 +1,16 @@
+# This workflow will build a MuleSoft project and deploy to CloudHub
+name: Cloudhub TEST BlendBuilder_ExperienceAPI
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        type: choice
+        description: Environment
+        options:
+          - Test
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Hello World
+      run: echo "Hello, world!"
