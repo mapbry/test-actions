@@ -8,6 +8,10 @@ on:
         description: Environment
         options:
           - Test
+      comment:
+        description: "Why you doing this?"
+        required: true
+        
 jobs:
   build:
     runs-on: ubuntu-latest
